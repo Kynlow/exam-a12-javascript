@@ -1,11 +1,11 @@
 function filtrerNegatifs(tab) {
-    let positifNbr = []
+    let positifNbr = [];
     for (let i = 0; i < tab.length; i++) {
-        if (tab[i] > 0) {
-            positifNbr.push(tab[i])
+        if (tab[i] >= 0) {
+            positifNbr.push(tab[i]);
         }
     }
-    return positifNbr
+    return positifNbr;
 }
 
-console.log(filtrerNegatifs([-3, 4, -1, 6])); // Résultat attendu : [4, 6]
+console.log(filtrerNegatifs([0])); // Résultat attendu : [4, 6]

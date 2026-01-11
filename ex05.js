@@ -1,11 +1,19 @@
 function compterVoyelles(chaine) {
+    if (!chaine) {
+        return 0;
+    }
     let compteur = 0;
-    let voyelles = ["a", "e", "i", "o", "u", "y"];
+    chaine = chaine.toUpperCase();
     for (let i = 0; i < chaine.length; i++) {
-        for (let j = 0; j < voyelles.length; j++) {
-            if (chaine[i] == voyelles[j]) {
-                compteur++;
-            }
+        if (
+            chaine[i] == "A" ||
+            chaine[i] == "E" ||
+            chaine[i] == "I" ||
+            chaine[i] == "O" ||
+            chaine[i] == "U" ||
+            chaine[i] == "Y"
+        ) {
+            compteur++;
         }
     }
     return compteur;
