@@ -26,6 +26,6 @@ jobs:
             - name: list files
               run: cd /app && ls -la
             - name: show file
-              run: cat evaluation-a12.test.js
+              run: cat /app/evaluation-a12.test.js
             - name: Running testinette
               run: cd /app && npm run test
